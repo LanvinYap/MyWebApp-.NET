@@ -1,0 +1,52 @@
+@page
+@model MyWebApp.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Me";
+}
+
+<div class="text-center">
+    <h1>Welcome to About Page</h1>
+</div>
+
+<section>
+    <h2>About Me</h2>
+    <p>@Model.About</p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    @foreach (var education in Model.Education)
+    {
+        <div class="education">
+            <h3>@education.Title</h3>
+            <ul>
+                @foreach (var description in education.Descriptions)
+                {
+                    <li>@description</li>
+                }
+            </ul>
+        </div>
+    }
+</section>
+
+<section>
+    <h2>Experience</h2>
+    @foreach (var experience in Model.Experiences)
+    {
+        <div class="experience">
+            <h3>@experience.Title</h3>
+            <ul>
+                @foreach (var description in experience.Descriptions)
+                {
+                    <li>@description</li>
+                }
+            </ul>
+        </div>
+    }
+</section>
+
+<section class="text-center">
+    <h2>Let's Connect!</h2>
+    <p>Feel free to reach out to me for collaborations or just to say hi.</p>
+    <a href="/Contact" class="btn btn-primary">Contact Me</a>
+</section>

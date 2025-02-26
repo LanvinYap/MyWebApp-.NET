@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome to My Website!</h1>
+</div>
+
+<!-- Add your custom HTML here -->
+<section>
+    <h2>Objective</h2>
+    <p>@Model.Objective</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        @foreach (var skill in Model.Skills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+</section>
+
+<section class="text-center">
+    <h2>Let's Connect!</h2>
+    <p>Feel free to reach out to me for collaborations or just to say hi.</p>
+    <a href="/Contact" class="btn btn-primary">Contact Me</a>
+</section>
