@@ -5,12 +5,28 @@
 }
 
 <div class="text-center">
-    <h1>Welcome to Projects Page</h1>
+    <h1>My Projects</h1>
 </div>
 
-<section>
-    <h2>About Me</h2>
-    <p>@Model.About</p>
+<section class="projects-section">
+    <h2>Featured Projects</h2>
+    @foreach (var project in Model.Projects)
+    {
+        <div class="project">
+            <h3>@project.Title</h3>
+            <p>@project.Description</p>
+            <ul>
+                @foreach (var detail in project.Details)
+                {
+                    <li>@detail</li>
+                }
+            </ul>
+            @if (!string.IsNullOrEmpty(project.Link) && project.Link != "-")
+            {
+                <a href="@project.Link" class="btn btn-primary" target="_blank">View Project</a>
+            }
+        </div>
+    }
 </section>
 
 <section class="text-center">
