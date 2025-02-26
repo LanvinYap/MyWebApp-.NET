@@ -1,0 +1,20 @@
+@page
+@model MyWebApp.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div class="text-center">
+    <h1>Welcome to Projects Page</h1>
+</div>
+
+<section>
+    <h2>About Me</h2>
+    <p>@Model.About</p>
+</section>
+
+<section class="text-center">
+    <h2>Let's Connect!</h2>
+    <p>Feel free to reach out to me for collaborations or just to say hi.</p>
+    <a href="/Contact" class="btn btn-primary">Contact Me</a>
+</section>

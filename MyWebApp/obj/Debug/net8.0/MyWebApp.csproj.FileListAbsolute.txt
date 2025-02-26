@@ -28,3 +28,4 @@ C:\Users\narut\OneDrive\文档\Visual Studio (.NET) WebApp\MyWebApp\obj\Debug\ne
 C:\Users\narut\OneDrive\文档\Visual Studio (.NET) WebApp\MyWebApp\obj\Debug\net8.0\MyWebApp.pdb
 C:\Users\narut\OneDrive\文档\Visual Studio (.NET) WebApp\MyWebApp\obj\Debug\net8.0\MyWebApp.genruntimeconfig.cache
 C:\Users\narut\OneDrive\文档\Visual Studio (.NET) WebApp\MyWebApp\obj\Debug\net8.0\ref\MyWebApp.dll
+C:\Users\narut\OneDrive\文档\Visual Studio (.NET) WebApp\MyWebApp\obj\Debug\net8.0\MyWebApp.sourcelink.json
